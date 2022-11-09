@@ -11,366 +11,703 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <a href="#" class="logo">
-        <h3>Sabi Mantock</h3>
-      </a>
-      <button class="menu_btn">
-        <div class="menu">
-          <img src="images/menu.png" alt="" />
+    <nav
+      class="navbar navbar-expand-lg px-3"
+      id="navbarId"
+      style="background-color: #fff"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#scrollspyHeadline" class="logo">
+          <h3 style="color: #6070ff; font-size: 18px; margin: 0">
+            Sabi Mantock
+          </h3>
+        </a>
+        <button
+          class="navbar-toggler m"
+          type="button"
+          data-bs-toggler="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="border: none"
+        >
+          <span
+            class="navbar-toggler-icon"
+            style="width: 24px; height: 24px"
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                href="#scrollspyPortfolio"
+                class="nav-link active"
+                aria-current="page"
+                style="color: #344563"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#scrollspyAbout" class="nav-link" style="color: #344563">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="#scrollspyContact"
+                class="nav-link"
+                style="color: #344563"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
-      </button>
-      <nav class="navigation">
-        <ul class="nav_wrapper">
-          <li class="nav_item">
-            <a href="#" class="nav_link"> Portfolio </a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link"> About </a>
-          </li>
-          <li class="nav_item">
-            <a href="#" class="nav_link"> Contact </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <!-- Headline Section -->
-    <section class="headline">
-      <div class="container">
-        <div class="title">
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbarId"
+      data-bs-offset="0"
+      class="scrollspy"
+      tabindex="0"
+    >
+      <section
+        class="container"
+        id="scrollspyHeadline"
+        style="min-height: 90vh; margin-top: 120px"
+      >
+        <div class="container">
           <h1>
             I’m Sabi <br />
             Glad to see you!
           </h1>
-        </div>
-        <div class="info">
+
           <p>
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
             what you see and have a project you need coded, don’t hestiate to
             contact me.
           </p>
-        </div>
-        <div class="social_media"><a href="#">LET’S CONNECT</a></div>
-        <ul class="social_icons">
-          <li>
-            <a href="#">
-              <img src="images/twitter.png" alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/linkedin.png" alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/m.png" alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/hub.png" alt="git" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/peace.png" alt="" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
+          <a
+            href="#"
+            class="mb-1"
+            style="
+              text-decoration: none;
+              color: #7f8cff;
+              font-weight: 500;
+              font-size: 16px;
+            "
+            >LET’S CONNECT</a
+          >
 
-    <!--Works Section  -->
-    <section class="works">
-      <div class="card">
-        <div class="img-container">
-          <img src="images/cardImg1.png" alt="project image" />
-        </div>
-        <div class="content">
-          <div class="project_name">
-            <h3 id="title">Tonic</h3>
-          </div>
-          <div class="project_info">
-            <div class="company">
-              <p>canopy</p>
-            </div>
-            <img class="dot" src="images/dot.png" alt="" />
-            <div class="role">
-              <p>Back End Dev</p>
-            </div>
-            <img class="dot" src="images/dot.png" alt="" />
-            <div class="year">
-              <p>2015</p>
-            </div>
-          </div>
-          <div class="description">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-          </div>
-          <ul class="languages">
-            <li id="lang">html</li>
-            <li id="lang">css</li>
-            <li id="lang">javascript</li>
-          </ul>
-          <div class="button-container">
-            <a href="#" class="btn">See Project</a>
-          </div>
-        </div>
-      </div>
-      <div class="card rev">
-        <div class="img-container">
-          <img src="images/cardImg2.png" alt="project image" />
-        </div>
-        <div class="content">
-          <div class="project_name">
-            <h3 id="title">Multi-Post Stories</h3>
-          </div>
-          <div class="project_info">
-            <div class="company">
-              <p>canopy</p>
-            </div>
-            <img class="dot" src="images/dot.png" alt="" />
-            <div class="role">
-              <p>Back End Dev</p>
-            </div>
-            <img class="dot" src="images/dot.png" alt="" />
-            <div class="year">
-              <p>2015</p>
-            </div>
-          </div>
-          <div class="description">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-          </div>
-          <ul class="languages">
-            <li id="lang">html</li>
-            <li id="lang">css</li>
-            <li id="lang">javascript</li>
-          </ul>
-          <div class="button-container">
-            <a href="#" class="btn">See Project</a>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="img-container">
-          <img src="images/cardImg3.png" alt="project image" />
-        </div>
-        <div class="content">
-          <div class="project_name">
-            <h3 id="title">Multi-Post Stories</h3>
-          </div>
-          <div class="project_info">
-            <div class="company">
-              <p>canopy</p>
-            </div>
-            <img class="dot" src="images/dot.png" alt="" />
-            <div class="role">
-              <p>Back End Dev</p>
-            </div>
-            <img class="dot" src="images/dot.png" alt="" />
-            <div class="year">
-              <p>2015</p>
-            </div>
-          </div>
-          <div class="description">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-          </div>
-          <ul class="languages">
-            <li id="lang">html</li>
-            <li id="lang">css</li>
-            <li id="lang">javascript</li>
-          </ul>
-          <div class="button-container">
-            <a href="#" class="btn">See Project</a>
-          </div>
-        </div>
-      </div>
-      <div class="card rev">
-        <div class="img-container">
-          <img src="images/cardImg4.png" alt="project image" />
-        </div>
-        <div class="content">
-          <div class="project_name">
-            <h3 id="title">Multi-Post Stories</h3>
-          </div>
-          <div class="project_info">
-            <div class="company">
-              <p>canopy</p>
-            </div>
-            <img class="dot" src="images/dot.png" alt="" />
-            <div class="role">
-              <p>Back End Dev</p>
-            </div>
-            <img class="dot" src="images/dot.png" alt="" />
-            <div class="year">
-              <p>2015</p>
-            </div>
-          </div>
-          <div class="description">
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-          </div>
-          <ul class="languages">
-            <li id="lang">html</li>
-            <li id="lang">css</li>
-            <li id="lang">javascript</li>
-          </ul>
-          <div class="button-container">
-            <a href="#" class="btn">See Project</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-
-    <section class="about">
-      <div class="desk_container">
-        <div class="left">
-          <div class="title">
-            <h1>
-              About <br />
-              Myself
-            </h1>
-          </div>
-          <div class="info">
-            <p>
-              I’m a software developer! I can help you build a product , feature
-              or website Look through some of my work and experience! If you
-              like what you see and have a project you need coded, don’t
-              hestiate to contact me.
-            </p>
-          </div>
-          <div class="social_media"><a href="#">LET’S CONNECT</a></div>
-          <ul class="social_icons" id="social_icons">
-            <li>
-              <a href="#">
-                <img src="images/hub.png" alt="git" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/linkedin.png" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="images/peace.png" alt="" />
-              </a>
-            </li>
-            <li>
+          <ul class="list-group list-group-horizontal gap-3 mb-3">
+            <li class="list-group-item px-0 py-1" style="border: none">
               <a href="#">
                 <img src="images/twitter.png" alt="" />
               </a>
             </li>
-            <li>
+            <li class="list-group-item px-0 py-1" style="border: none">
+              <a href="#">
+                <img src="images/linkedin.png" alt="" />
+              </a>
+            </li>
+            <li class="list-group-item p-0 py-1" style="border: none">
               <a href="#">
                 <img src="images/m.png" alt="" />
               </a>
             </li>
+            <li class="list-group-item px-0 py-1" style="border: none">
+              <a href="#">
+                <img src="images/hub.png" alt="git" />
+              </a>
+            </li>
+            <li class="list-group-item px-0 py-1" style="border: none">
+              <a href="#">
+                <img src="images/peace.png" alt="" />
+              </a>
+            </li>
           </ul>
-          <div class="button-container">
-            <a href="#" class="btn">Get my resume</a>
+        </div>
+      </section>
+
+      <!--Works Section  -->
+      <section class="d-grid px-4" id="scrollspyPortfolio" style="gap: 100px">
+        <div class="card p-3">
+          <div class="row">
+            <div class="col-md-5">
+              <img
+                src="images/cardImg1.png"
+                class="img-fluid rounded-start"
+                alt="project image"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-body">
+                <h3
+                  class="card-title m-0 text-capitalize"
+                  style="font-size: 40px; color: #091e42"
+                >
+                  Tonic
+                </h3>
+                <div class="d-flex align-items-center gap-2 mt-3">
+                  <p
+                    class="card-text m-0 text-uppercase"
+                    style="font-size: 18px; color: #344563; font-weight: 500"
+                  >
+                    canopy
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    Back End Dev
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    2015
+                  </p>
+                </div>
+
+                <p class="card-text" style="width: 81%">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
+
+                <ul class="list-group list-group-horizontal gap-1 mb-3">
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    html
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    javascript
+                  </li>
+                </ul>
+
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #fff;
+                    color: #6070ff;
+                    border: 1px solid #6070ff;
+                    font-weight: 500;
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  See Project</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-        <div class="right">
-          <ul class="skill-list">
-            <li class="skills">
-              <h3 class="langTitle">Languages</h3>
-              <div class="drop"><img src="images/drop.png" alt="" /></div>
-            </li>
-            <ul class="langList">
-              <li class="lang">
-                <div class="langImg">
-                  <img src="images/js.png" alt="" />
+
+        <div class="card p-3">
+          <div class="row">
+            <div class="col-md-5">
+              <img
+                src="images/cardImg2.png"
+                class="img-fluid rounded-start"
+                alt="project image"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-body">
+                <h3
+                  class="card-title m-0 text-capitalize"
+                  style="font-size: 40px; color: #091e42"
+                >
+                  Multi-Post Stories
+                </h3>
+                <div class="d-flex align-items-center gap-2 mt-3">
+                  <p
+                    class="card-text m-0 text-uppercase"
+                    style="font-size: 18px; color: #344563; font-weight: 500"
+                  >
+                    canopy
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    Back End Dev
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    2015
+                  </p>
                 </div>
-                <h4>Javascript</h4>
+
+                <p class="card-text" style="width: 81%">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
+
+                <ul class="list-group list-group-horizontal gap-1 mb-3">
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    html
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    javascript
+                  </li>
+                </ul>
+
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #fff;
+                    color: #6070ff;
+                    border: 1px solid #6070ff;
+                    font-weight: 500;
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  See Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-3">
+          <div class="row">
+            <div class="col-md-5">
+              <img
+                src="images/cardImg3.png"
+                class="img-fluid rounded-start"
+                alt="project image"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-body">
+                <h3
+                  class="card-title m-0 text-capitalize"
+                  style="font-size: 40px; color: #091e42"
+                >
+                  Multi-Post Stories
+                </h3>
+                <div class="d-flex align-items-center gap-2 mt-3">
+                  <p
+                    class="card-text m-0 text-uppercase"
+                    style="font-size: 18px; color: #344563; font-weight: 500"
+                  >
+                    canopy
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    Back End Dev
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    2015
+                  </p>
+                </div>
+
+                <p class="card-text" style="width: 81%">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
+
+                <ul class="list-group list-group-horizontal gap-1 mb-3">
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    html
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    javascript
+                  </li>
+                </ul>
+
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #fff;
+                    color: #6070ff;
+                    border: 1px solid #6070ff;
+                    font-weight: 500;
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  See Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card p-3">
+          <div class="row">
+            <div class="col-md-5">
+              <img
+                src="images/cardImg4.png"
+                class="img-fluid rounded-start"
+                alt="project image"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <div class="card-body">
+                <h3
+                  class="card-title m-0 text-capitalize"
+                  style="font-size: 40px; color: #091e42"
+                >
+                  Multi-Post Stories
+                </h3>
+                <div class="d-flex align-items-center gap-2 mt-3">
+                  <p
+                    class="card-text m-0 text-uppercase"
+                    style="font-size: 18px; color: #344563; font-weight: 500"
+                  >
+                    canopy
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    Back End Dev
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    2015
+                  </p>
+                </div>
+
+                <p class="card-text" style="width: 81%">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
+
+                <ul class="list-group list-group-horizontal gap-1 mb-3">
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    html
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    javascript
+                  </li>
+                </ul>
+
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #fff;
+                    color: #6070ff;
+                    border: 1px solid #6070ff;
+                    font-weight: 500;
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  See Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+
+      <section class="container mt-5 px-4" id="scrollspyAbout">
+        <div class="row">
+          <div class="col">
+            <div>
+              <h1>
+                About <br />
+                Myself
+              </h1>
+            </div>
+            <div class="info">
+              <p>
+                I’m a software developer! I can help you build a product ,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
+              </p>
+            </div>
+            <div class="social_media">
+              <a href="#" style="text-decoration: none">LET’S CONNECT</a>
+            </div>
+            <ul class="list-group list-group-horizontal mt-4" id="social_icons">
+              <li class="list-group-item" style="border: none">
+                <a href="#">
+                  <img src="images/hub.png" alt="git" />
+                </a>
               </li>
-              <li class="lang">
-                <div class="langImg">
-                  <img src="images//html.png" alt="" />
-                </div>
-                <h4>HTML</h4>
+              <li class="list-group-item" style="border: none">
+                <a href="#">
+                  <img src="images/linkedin.png" alt="" />
+                </a>
               </li>
-              <li class="lang">
-                <div class="langImg">
-                  <img src="images/css.png" alt="" />
-                </div>
-                <h4>CSS</h4>
+              <li class="list-group-item" style="border: none">
+                <a href="#">
+                  <img src="images/peace.png" alt="" />
+                </a>
+              </li>
+              <li class="list-group-item" style="border: none">
+                <a href="#">
+                  <img src="images/twitter.png" alt="" />
+                </a>
+              </li>
+              <li class="list-group-item" style="border: none">
+                <a href="#">
+                  <img src="images/m.png" alt="" />
+                </a>
               </li>
             </ul>
-            <li class="skills">
-              <h3 class="langTitle">Frameworks</h3>
-              <div class="arrow"><img src="images/arrow.png" alt="" /></div>
-            </li>
-            <hr />
-            <li class="skills">
-              <h3 class="langTitle">Skills</h3>
-              <div class="arrow"><img src="images/arrow.png" alt="" /></div>
-            </li>
-            <hr />
-          </ul>
+            <div class="button-container">
+              <a href="#" class="btn btn-primary mt-3">Get my resume</a>
+            </div>
+          </div>
+          <div class="col-7">
+            <ul class="row">
+              <li class="d-flex justify-content-between">
+                <h3>Languages</h3>
+                <div><img src="images/drop.png" alt="" /></div>
+              </li>
+              <ul
+                class="d-flex align-items-center gap-5"
+                style="list-style: none"
+              >
+                <li class="d-flex flex-column align-items-center">
+                  <div>
+                    <img style="width: 48px" src="images/js.png" alt="" />
+                  </div>
+                  <p>Javascript</p>
+                </li>
+                <li class="d-flex flex-column align-items-center">
+                  <div>
+                    <img style="width: 48px" src="images/html.png" alt="" />
+                  </div>
+                  <p>HTML`</p>
+                </li>
+                <li class="d-flex flex-column align-items-center">
+                  <div>
+                    <img style="width: 48px" src="images/css.png" alt="" />
+                  </div>
+                  <p>CSS</p>
+                </li>
+              </ul>
+              <li class="d-flex justify-content-between">
+                <h3>Frameworks</h3>
+                <div><img src="images/arrow.png" alt="" /></div>
+              </li>
+              <hr />
+              <li class="d-flex justify-content-between">
+                <h3>Skills</h3>
+                <div><img src="images/arrow.png" alt="" /></div>
+              </li>
+              <hr />
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer class="contact_footer" id="scrollspyContact">
+        <div
+          class="d-flex flex-column text-center align-items-center px-4 mb-3 mt-5"
+        >
+          <h3>Contact me</h3>
+
+          <p style="width: 40%">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+          <form
+            id="form_container"
+            method="post"
+            action="https://formspree.io/f/xknepely"
+          >
+            <div class="input_form mb-4" style="width: 600px">
+              <input
+                class="form-control"
+                type="text"
+                name="name"
+                placeholder="Name"
+                maxlength="30"
+                required
+              />
+            </div>
+            <div class="input_form mb-4">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="input_form mb-4">
+              <textarea
+                name="message"
+                class="form-control"
+                placeholder="Write your message here"
+                maxlength="500"
+                required
+              ></textarea>
+            </div>
+            <div class="">
+              <button class="btn btn-primary mt-2" type="submit">
+                get in touch
+              </button>
+            </div>
+          </form>
+        </div>
+      </footer>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>you've reached it</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <footer class="contact_footer">
-      <div class="contact_container">
-        <h3>Contact me</h3>
-
-        <p>
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
-        </p>
-        <form
-          id="form_container"
-          method="post"
-          action="https://formspree.io/f/xknepely"
-        >
-          <div class="input_form">
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              maxlength="30"
-              required
-            />
-          </div>
-          <div class="input_form">
-            <input type="email" name="email" placeholder="Email" required />
-          </div>
-          <div class="input_form">
-            <textarea
-              name="message"
-              placeholder="Write your message here"
-              maxlength="500"
-              required
-            ></textarea>
-          </div>
-          <div class="contact_button_container">
-            <button class="conact_btn" type="submit">
-              <p id="btn_text">get in touch</p>
-            </button>
-          </div>
-        </form>
-      </div>
-    </footer>
+    </div>
   </body>
 </html>
