@@ -570,10 +570,10 @@
         </div>
       </section>
       <footer class="contact_footer" id="scrollspyContact">
-        <div class="contact_container">
+        <div class="d-flex flex-column text-center align-items-center px-4 mb-3 mt-5">
           <h3>Contact me</h3>
 
-          <p>
+          <p style="width: 40%;">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
             to help with it
@@ -583,8 +583,9 @@
             method="post"
             action="https://formspree.io/f/xknepely"
           >
-            <div class="input_form">
+            <div class="input_form mb-4" style="width: 600px;">
               <input
+                class="form-control"
                 type="text"
                 name="name"
                 placeholder="Name"
@@ -592,20 +593,20 @@
                 required
               />
             </div>
-            <div class="input_form">
-              <input type="email" name="email" placeholder="Email" required />
+            <div class="input_form mb-4">
+              <input type="email" class="form-control " name="email" placeholder="Email" required />
             </div>
-            <div class="input_form">
+            <div class="input_form mb-4">
               <textarea
                 name="message"
+                class="form-control"
                 placeholder="Write your message here"
                 maxlength="500"
                 required
               ></textarea>
             </div>
-            <div class="contact_button_container">
-              <button class="conact_btn" type="submit">
-                <p id="btn_text">get in touch</p>
+            <div class="">
+              <button class="btn btn-primary mt-2" type="submit"> get in touch
               </button>
             </div>
           </form>
