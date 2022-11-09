@@ -26,24 +26,30 @@
   <body>
     <!-- Header -->
     <nav
-      class="navbar navbar-expand-lg px-5"
+      class="navbar navbar-expand-lg px-3"
       id="navbarId"
       style="background-color: #fff"
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="#scrollspyHeadline" class="logo">
-          <h3 style="color: #6070ff; font-size: 18px">Sabi Mantock</h3>
+          <h3 style="color: #6070ff; font-size: 18px; margin: 0">
+            Sabi Mantock
+          </h3>
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler m"
           type="button"
           data-bs-toggler="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="border: none"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span
+            class="navbar-toggler-icon"
+            style="width: 24px; height: 24px"
+          ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -95,7 +101,7 @@
             Glad to see you!
           </h1>
 
-          <p style="width: 60%">
+          <p>
             I’m a software developer! I can help you build a product , feature
             or website Look through some of my work and experience! If you like
             what you see and have a project you need coded, don’t hestiate to
@@ -144,343 +150,383 @@
       </section>
 
       <!--Works Section  -->
-      <section
-        class="d-grid mx-auto px-5"
-        id="scrollspyPortfolio"
-        style="gap: 100px"
-      >
-        <div
-          class="card p-4 mx-auto d-flex flex-row justify-content-between align-items-center gap-5"
-          style="width: 100%"
-        >
-          <img
-            src="images/cardImg1.png"
-            class="card-img-top"
-            alt="project image"
-            style="width: 45%"
-          />
-
-          <div class="card-body">
-            <h3
-              class="card-title m-0 text-capitalize"
-              style="font-size: 40px; color: #091e42"
-            >
-              Tonic
-            </h3>
-            <div class="d-flex align-items-center gap-2 mt-3">
-              <p
-                class="card-text m-0 text-uppercase"
-                style="font-size: 18px; color: #344563; font-weight: 500"
-              >
-                canopy
-              </p>
+      <section class="d-grid px-4" id="scrollspyPortfolio" style="gap: 100px">
+        <div class="card p-3">
+          <div class="row">
+            <div class="col-md-5">
               <img
-                class="img-fluid"
-                src="images/dot.png"
-                alt=""
-                style="width: 8px"
+                src="images/cardImg1.png"
+                class="img-fluid rounded-start"
+                alt="project image"
               />
-              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
-                Back End Dev
-              </p>
-              <img
-                class="img-fluid"
-                src="images/dot.png"
-                alt=""
-                style="width: 8px"
-              />
-              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
-                2015
-              </p>
             </div>
 
-            <p class="card-text" style="width: 81%">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h3
+                  class="card-title m-0 text-capitalize"
+                  style="font-size: 40px; color: #091e42"
+                >
+                  Tonic
+                </h3>
+                <div class="d-flex align-items-center gap-2 mt-3">
+                  <p
+                    class="card-text m-0 text-uppercase"
+                    style="font-size: 18px; color: #344563; font-weight: 500"
+                  >
+                    canopy
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    Back End Dev
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    2015
+                  </p>
+                </div>
 
-            <ul class="list-group list-group-horizontal gap-1 mb-3">
-              <li
-                class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                html
-              </li>
-              <li
-              class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                css
-              </li>
-              <li
-              class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                javascript
-              </li>
-            </ul>
+                <p class="card-text" style="width: 81%">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
 
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="
-                background-color: #fff;
-                color: #6070ff;
-                border: 1px solid #6070ff;
-                font-weight: 500;
-              " data-bs-toggle="modal" data-bs-target="#exampleModal">
-              See Project</a>
+                <ul class="list-group list-group-horizontal gap-1 mb-3">
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    html
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    javascript
+                  </li>
+                </ul>
+
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #fff;
+                    color: #6070ff;
+                    border: 1px solid #6070ff;
+                    font-weight: 500;
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  See Project</a
+                >
+              </div>
+            </div>
           </div>
         </div>
 
-        <div
-          class="card p-4 mx-auto d-flex flex-row justify-content-between align-items-center gap-5"
-          style="width: 100%"
-        >
-          <img
-            src="images/cardImg2.png"
-            class="card-img-top"
-            alt="project image"
-            style="width: 45%"
-          />
-
-          <div class="card-body">
-            <h3
-              class="card-title m-0 text-capitalize"
-              style="font-size: 40px; color: #091e42"
-            >
-              Multi-Post Stories
-            </h3>
-            <div class="d-flex align-items-center gap-2 mt-3">
-              <p
-                class="card-text m-0 text-uppercase"
-                style="font-size: 18px; color: #344563; font-weight: 500"
-              >
-                canopy
-              </p>
+        <div class="card p-3">
+          <div class="row">
+            <div class="col-md-5">
               <img
-                class="img-fluid"
-                src="images/dot.png"
-                alt=""
-                style="width: 8px"
+                src="images/cardImg2.png"
+                class="img-fluid rounded-start"
+                alt="project image"
               />
-              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
-                Back End Dev
-              </p>
-              <img
-                class="img-fluid"
-                src="images/dot.png"
-                alt=""
-                style="width: 8px"
-              />
-              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
-                2015
-              </p>
             </div>
 
-            <p class="card-text" style="width: 81%">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h3
+                  class="card-title m-0 text-capitalize"
+                  style="font-size: 40px; color: #091e42"
+                >
+                  Multi-Post Stories
+                </h3>
+                <div class="d-flex align-items-center gap-2 mt-3">
+                  <p
+                    class="card-text m-0 text-uppercase"
+                    style="font-size: 18px; color: #344563; font-weight: 500"
+                  >
+                    canopy
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    Back End Dev
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    2015
+                  </p>
+                </div>
 
-            <ul class="list-group list-group-horizontal gap-1 mb-3">
-              <li
-                class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                html
-              </li>
-              <li
-              class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                css
-              </li>
-              <li
-              class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                javascript
-              </li>
-            </ul>
+                <p class="card-text" style="width: 81%">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
 
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="
-                background-color: #fff;
-                color: #6070ff;
-                border: 1px solid #6070ff;
-                font-weight: 500;
-              "
-              >See Project</a
-            >
+                <ul class="list-group list-group-horizontal gap-1 mb-3">
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    html
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    javascript
+                  </li>
+                </ul>
+
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #fff;
+                    color: #6070ff;
+                    border: 1px solid #6070ff;
+                    font-weight: 500;
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  See Project</a
+                >
+              </div>
+            </div>
           </div>
         </div>
 
-        <div
-          class="card p-4 mx-auto d-flex flex-row justify-content-between align-items-center gap-5"
-          style="width: 100%"
-        >
-          <img
-            src="images/cardImg3.png"
-            class="card-img-top"
-            alt="project image"
-            style="width: 45%"
-          />
-
-          <div class="card-body">
-            <h3
-              class="card-title m-0 text-capitalize"
-              style="font-size: 40px; color: #091e42"
-            >
-              Multi-Post Stories
-            </h3>
-            <div class="d-flex align-items-center gap-2 mt-3">
-              <p
-                class="card-text m-0 text-uppercase"
-                style="font-size: 18px; color: #344563; font-weight: 500"
-              >
-                canopy
-              </p>
+        <div class="card p-3">
+          <div class="row">
+            <div class="col-md-5">
               <img
-                class="img-fluid"
-                src="images/dot.png"
-                alt=""
-                style="width: 8px"
+                src="images/cardImg3.png"
+                class="img-fluid rounded-start"
+                alt="project image"
               />
-              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
-                Back End Dev
-              </p>
-              <img
-                class="img-fluid"
-                src="images/dot.png"
-                alt=""
-                style="width: 8px"
-              />
-              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
-                2015
-              </p>
             </div>
 
-            <p class="card-text" style="width: 81%">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h3
+                  class="card-title m-0 text-capitalize"
+                  style="font-size: 40px; color: #091e42"
+                >
+                  Multi-Post Stories
+                </h3>
+                <div class="d-flex align-items-center gap-2 mt-3">
+                  <p
+                    class="card-text m-0 text-uppercase"
+                    style="font-size: 18px; color: #344563; font-weight: 500"
+                  >
+                    canopy
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    Back End Dev
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    2015
+                  </p>
+                </div>
 
-            <ul class="list-group list-group-horizontal gap-1 mb-3">
-              <li
-                class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                html
-              </li>
-              <li
-              class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                css
-              </li>
-              <li
-              class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                javascript
-              </li>
-            </ul>
+                <p class="card-text" style="width: 81%">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
 
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="
-                background-color: #fff;
-                color: #6070ff;
-                border: 1px solid #6070ff;
+                <ul class="list-group list-group-horizontal gap-1 mb-3">
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    html
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    javascript
+                  </li>
+                </ul>
 
-                font-weight: 500;
-              "
-              >See Project</a
-            >
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #fff;
+                    color: #6070ff;
+                    border: 1px solid #6070ff;
+                    font-weight: 500;
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  See Project</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="card p-4 mx-auto d-flex flex-row justify-content-between align-items-center gap-5"
-          style="width: 100%"
-        >
-          <img
-            src="images/cardImg4.png"
-            class="card-img-top"
-            alt="project image"
-            style="width: 45%"
-          />
 
-          <div class="card-body">
-            <h3
-              class="card-title m-0 text-capitalize"
-              style="font-size: 40px; color: #091e42"
-            >
-              Multi-Post Stories
-            </h3>
-            <div class="d-flex align-items-center gap-2 mt-3">
-              <p
-                class="card-text m-0 text-uppercase"
-                style="font-size: 18px; color: #344563; font-weight: 500"
-              >
-                canopy
-              </p>
+        <div class="card p-3">
+          <div class="row">
+            <div class="col-md-5">
               <img
-                class="img-fluid"
-                src="images/dot.png"
-                alt=""
-                style="width: 8px"
+                src="images/cardImg4.png"
+                class="img-fluid rounded-start"
+                alt="project image"
               />
-              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
-                Back End Dev
-              </p>
-              <img
-                class="img-fluid"
-                src="images/dot.png"
-                alt=""
-                style="width: 8px"
-              />
-              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
-                2015
-              </p>
             </div>
 
-            <p class="card-text" style="width: 81%">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h3
+                  class="card-title m-0 text-capitalize"
+                  style="font-size: 40px; color: #091e42"
+                >
+                  Multi-Post Stories
+                </h3>
+                <div class="d-flex align-items-center gap-2 mt-3">
+                  <p
+                    class="card-text m-0 text-uppercase"
+                    style="font-size: 18px; color: #344563; font-weight: 500"
+                  >
+                    canopy
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    Back End Dev
+                  </p>
+                  <img
+                    class="img-fluid"
+                    src="images/dot.png"
+                    alt=""
+                    style="width: 8px"
+                  />
+                  <p
+                    class="card-text m-0"
+                    style="font-size: 18px; color: #6b778c"
+                  >
+                    2015
+                  </p>
+                </div>
 
-            <ul class="list-group list-group-horizontal gap-1 mb-3">
-              <li
-                class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                html
-              </li>
-              <li
-              class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                css
-              </li>
-              <li
-              class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
-              >
-                javascript
-              </li>
-            </ul>
+                <p class="card-text" style="width: 81%">
+                  A daily selection of privately personalized reads; no accounts
+                  or sign-ups required.
+                </p>
 
-            <a
-              href="#"
-              class="btn btn-primary"
-              style="
-                background-color: #fff;
-                color: #6070ff;
-                border: 1px solid #6070ff;
+                <ul class="list-group list-group-horizontal gap-1 mb-3">
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    html
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    css
+                  </li>
+                  <li
+                    class="list-group-item px-2 py-1 badge rounded-pill bg-light text-primary"
+                  >
+                    javascript
+                  </li>
+                </ul>
 
-                font-weight: 500;
-              "
-              >See Project</a
-            >
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  style="
+                    background-color: #fff;
+                    color: #6070ff;
+                    border: 1px solid #6070ff;
+                    font-weight: 500;
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  See Project</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- About Section -->
 
-      <section class="container  mt-5" id="scrollspyAbout">
+      <section class="container mt-5 px-4" id="scrollspyAbout">
         <div class="row">
           <div class="col">
             <div>
@@ -497,36 +543,38 @@
                 don’t hestiate to contact me.
               </p>
             </div>
-            <div class="social_media"><a href="#" style="text-decoration: none">LET’S CONNECT</a></div>
+            <div class="social_media">
+              <a href="#" style="text-decoration: none">LET’S CONNECT</a>
+            </div>
             <ul class="list-group list-group-horizontal mt-4" id="social_icons">
-              <li class="list-group-item" style="border: none;">
+              <li class="list-group-item" style="border: none">
                 <a href="#">
                   <img src="images/hub.png" alt="git" />
                 </a>
               </li>
-              <li class="list-group-item"  style="border: none;">
+              <li class="list-group-item" style="border: none">
                 <a href="#">
                   <img src="images/linkedin.png" alt="" />
                 </a>
               </li>
-              <li class="list-group-item"  style="border: none;">
+              <li class="list-group-item" style="border: none">
                 <a href="#">
                   <img src="images/peace.png" alt="" />
                 </a>
               </li>
-              <li class="list-group-item"  style="border: none;">
+              <li class="list-group-item" style="border: none">
                 <a href="#">
                   <img src="images/twitter.png" alt="" />
                 </a>
               </li>
-              <li class="list-group-item"  style="border: none;">
+              <li class="list-group-item" style="border: none">
                 <a href="#">
                   <img src="images/m.png" alt="" />
                 </a>
               </li>
             </ul>
             <div class="button-container">
-              <a href="#" class="btn btn-primary mt-3" >Get my resume</a>
+              <a href="#" class="btn btn-primary mt-3">Get my resume</a>
             </div>
           </div>
           <div class="col-7">
@@ -535,22 +583,25 @@
                 <h3>Languages</h3>
                 <div><img src="images/drop.png" alt="" /></div>
               </li>
-              <ul class="d-flex align-items-center gap-5" style="list-style: none;">
+              <ul
+                class="d-flex align-items-center gap-5"
+                style="list-style: none"
+              >
                 <li class="d-flex flex-column align-items-center">
                   <div>
-                    <img style="width: 48px;" src="images/js.png" alt="" />
+                    <img style="width: 48px" src="images/js.png" alt="" />
                   </div>
                   <p>Javascript</p>
                 </li>
                 <li class="d-flex flex-column align-items-center">
                   <div>
-                    <img style="width: 48px;" src="images/html.png" alt="" />
+                    <img style="width: 48px" src="images/html.png" alt="" />
                   </div>
                   <p>HTML`</p>
                 </li>
                 <li class="d-flex flex-column align-items-center">
                   <div>
-                    <img style="width: 48px;" src="images/css.png" alt="" />
+                    <img style="width: 48px" src="images/css.png" alt="" />
                   </div>
                   <p>CSS</p>
                 </li>
@@ -570,10 +621,12 @@
         </div>
       </section>
       <footer class="contact_footer" id="scrollspyContact">
-        <div class="d-flex flex-column text-center align-items-center px-4 mb-3 mt-5">
+        <div
+          class="d-flex flex-column text-center align-items-center px-4 mb-3 mt-5"
+        >
           <h3>Contact me</h3>
 
-          <p style="width: 40%;">
+          <p style="width: 40%">
             If you have an application you are interested in developing, a
             feature that you need built or a project that needs coding. I’d love
             to help with it
@@ -583,7 +636,7 @@
             method="post"
             action="https://formspree.io/f/xknepely"
           >
-            <div class="input_form mb-4" style="width: 600px;">
+            <div class="input_form mb-4" style="width: 600px">
               <input
                 class="form-control"
                 type="text"
@@ -594,7 +647,13 @@
               />
             </div>
             <div class="input_form mb-4">
-              <input type="email" class="form-control " name="email" placeholder="Email" required />
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                placeholder="Email"
+                required
+              />
             </div>
             <div class="input_form mb-4">
               <textarea
@@ -606,25 +665,45 @@
               ></textarea>
             </div>
             <div class="">
-              <button class="btn btn-primary mt-2" type="submit"> get in touch
+              <button class="btn btn-primary mt-2" type="submit">
+                get in touch
               </button>
             </div>
           </form>
         </div>
       </footer>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
-              <p> you've reached it</p>
+              <p>you've reached it</p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
             </div>
           </div>
         </div>
