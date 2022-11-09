@@ -26,7 +26,7 @@
   <body>
     <!-- Header -->
     <nav
-      class="navbar navbar-expand-lg"
+      class="navbar navbar-expand-lg px-5"
       id="navbarId"
       style="background-color: #fff"
     >
@@ -84,45 +84,57 @@
       class="scrollspy"
       tabindex="0"
     >
-      <section class="headline" id="scrollspyHeadline">
+      <section
+        class="container"
+        id="scrollspyHeadline"
+        style="min-height: 90vh; margin-top: 120px"
+      >
         <div class="container">
-          <div class="title">
-            <h1>
-              I’m Sabi <br />
-              Glad to see you!
-            </h1>
-          </div>
-          <div class="info">
-            <p>
-              I’m a software developer! I can help you build a product , feature
-              or website Look through some of my work and experience! If you
-              like what you see and have a project you need coded, don’t
-              hestiate to contact me.
-            </p>
-          </div>
-          <div class="social_media"><a href="#">LET’S CONNECT</a></div>
-          <ul class="social_icons">
-            <li>
+          <h1>
+            I’m Sabi <br />
+            Glad to see you!
+          </h1>
+
+          <p style="width: 60%">
+            I’m a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <a
+            href="#"
+            class="mb-1"
+            style="
+              text-decoration: none;
+              color: #7f8cff;
+              font-weight: 500;
+              font-size: 16px;
+            "
+            >LET’S CONNECT</a
+          >
+
+          <ul class="list-group list-group-horizontal gap-3 mb-3">
+            <li class="list-group-item px-0 py-1" style="border: none">
               <a href="#">
                 <img src="images/twitter.png" alt="" />
               </a>
             </li>
-            <li>
+            <li class="list-group-item px-0 py-1" style="border: none">
               <a href="#">
                 <img src="images/linkedin.png" alt="" />
               </a>
             </li>
-            <li>
+            <li class="list-group-item p-0 py-1" style="border: none">
               <a href="#">
                 <img src="images/m.png" alt="" />
               </a>
             </li>
-            <li>
+            <li class="list-group-item px-0 py-1" style="border: none">
               <a href="#">
                 <img src="images/hub.png" alt="git" />
               </a>
             </li>
-            <li>
+            <li class="list-group-item px-0 py-1" style="border: none">
               <a href="#">
                 <img src="images/peace.png" alt="" />
               </a>
@@ -132,153 +144,391 @@
       </section>
 
       <!--Works Section  -->
-      <section class="works" id="scrollspyPortfolio">
-        <div class="card">
-          <div class="img-container">
-            <img src="images/cardImg1.png" alt="project image" />
-          </div>
-          <div class="content">
-            <div class="project_name">
-              <h3 id="title">Tonic</h3>
-            </div>
-            <div class="project_info">
-              <div class="company">
-                <p>canopy</p>
-              </div>
-              <img class="dot" src="images/dot.png" alt="" />
-              <div class="role">
-                <p>Back End Dev</p>
-              </div>
-              <img class="dot" src="images/dot.png" alt="" />
-              <div class="year">
-                <p>2015</p>
-              </div>
-            </div>
-            <div class="description">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
+      <section
+        class="d-grid mx-auto px-5"
+        id="scrollspyPortfolio"
+        style="gap: 100px"
+      >
+        <div
+          class="card p-4 mx-auto d-flex flex-row justify-content-between align-items-center gap-5"
+          style="width: 100%"
+        >
+          <img
+            src="images/cardImg1.png"
+            class="card-img-top"
+            alt="project image"
+            style="width: 45%"
+          />
+
+          <div class="card-body">
+            <h3
+              class="card-title m-0 text-capitalize"
+              style="font-size: 40px; color: #091e42"
+            >
+              Tonic
+            </h3>
+            <div class="d-flex align-items-center gap-2 mt-3">
+              <p
+                class="card-text m-0 text-uppercase"
+                style="font-size: 18px; color: #344563; font-weight: 500"
+              >
+                canopy
+              </p>
+              <img
+                class="img-fluid"
+                src="images/dot.png"
+                alt=""
+                style="width: 8px"
+              />
+              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
+                Back End Dev
+              </p>
+              <img
+                class="img-fluid"
+                src="images/dot.png"
+                alt=""
+                style="width: 8px"
+              />
+              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
+                2015
               </p>
             </div>
-            <ul class="languages">
-              <li id="lang">html</li>
-              <li id="lang">css</li>
-              <li id="lang">javascript</li>
+
+            <p class="card-text" style="width: 81%">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+
+            <ul class="list-group list-group-horizontal gap-1 mb-3">
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                html
+              </li>
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                css
+              </li>
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                javascript
+              </li>
             </ul>
-            <div class="button-container">
-              <a href="#" class="btn">See Project</a>
-            </div>
+
+            <a href="#" class="btn btn-primary">See Project</a>
           </div>
         </div>
-        <div class="card rev">
-          <div class="img-container">
-            <img src="images/cardImg2.png" alt="project image" />
-          </div>
-          <div class="content">
-            <div class="project_name">
-              <h3 id="title">Multi-Post Stories</h3>
-            </div>
-            <div class="project_info">
-              <div class="company">
-                <p>canopy</p>
-              </div>
-              <img class="dot" src="images/dot.png" alt="" />
-              <div class="role">
-                <p>Back End Dev</p>
-              </div>
-              <img class="dot" src="images/dot.png" alt="" />
-              <div class="year">
-                <p>2015</p>
-              </div>
-            </div>
-            <div class="description">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
+
+        <div
+          class="card p-4 mx-auto d-flex flex-row justify-content-between align-items-center gap-5"
+          style="width: 100%"
+        >
+          <img
+            src="images/cardImg2.png"
+            class="card-img-top"
+            alt="project image"
+            style="width: 45%"
+          />
+
+          <div class="card-body">
+            <h3
+              class="card-title m-0 text-capitalize"
+              style="font-size: 40px; color: #091e42"
+            >
+              Multi-Post Stories
+            </h3>
+            <div class="d-flex align-items-center gap-2 mt-3">
+              <p
+                class="card-text m-0 text-uppercase"
+                style="font-size: 18px; color: #344563; font-weight: 500"
+              >
+                canopy
+              </p>
+              <img
+                class="img-fluid"
+                src="images/dot.png"
+                alt=""
+                style="width: 8px"
+              />
+              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
+                Back End Dev
+              </p>
+              <img
+                class="img-fluid"
+                src="images/dot.png"
+                alt=""
+                style="width: 8px"
+              />
+              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
+                2015
               </p>
             </div>
-            <ul class="languages">
-              <li id="lang">html</li>
-              <li id="lang">css</li>
-              <li id="lang">javascript</li>
+
+            <p class="card-text" style="width: 81%">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+
+            <ul class="list-group list-group-horizontal gap-1 mb-3">
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                html
+              </li>
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                css
+              </li>
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                javascript
+              </li>
             </ul>
-            <div class="button-container">
-              <a href="#" class="btn">See Project</a>
-            </div>
+
+            <a href="#" class="btn btn-primary">See Project</a>
           </div>
         </div>
-        <div class="card">
-          <div class="img-container">
-            <img src="images/cardImg3.png" alt="project image" />
-          </div>
-          <div class="content">
-            <div class="project_name">
-              <h3 id="title">Multi-Post Stories</h3>
-            </div>
-            <div class="project_info">
-              <div class="company">
-                <p>canopy</p>
-              </div>
-              <img class="dot" src="images/dot.png" alt="" />
-              <div class="role">
-                <p>Back End Dev</p>
-              </div>
-              <img class="dot" src="images/dot.png" alt="" />
-              <div class="year">
-                <p>2015</p>
-              </div>
-            </div>
-            <div class="description">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
+
+        <div
+          class="card p-4 mx-auto d-flex flex-row justify-content-between align-items-center gap-5"
+          style="width: 100%"
+        >
+          <img
+            src="images/cardImg3.png"
+            class="card-img-top"
+            alt="project image"
+            style="width: 45%"
+          />
+
+          <div class="card-body">
+            <h3
+              class="card-title m-0 text-capitalize"
+              style="font-size: 40px; color: #091e42"
+            >
+              Multi-Post Stories
+            </h3>
+            <div class="d-flex align-items-center gap-2 mt-3">
+              <p
+                class="card-text m-0 text-uppercase"
+                style="font-size: 18px; color: #344563; font-weight: 500"
+              >
+                canopy
+              </p>
+              <img
+                class="img-fluid"
+                src="images/dot.png"
+                alt=""
+                style="width: 8px"
+              />
+              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
+                Back End Dev
+              </p>
+              <img
+                class="img-fluid"
+                src="images/dot.png"
+                alt=""
+                style="width: 8px"
+              />
+              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
+                2015
               </p>
             </div>
-            <ul class="languages">
-              <li id="lang">html</li>
-              <li id="lang">css</li>
-              <li id="lang">javascript</li>
+
+            <p class="card-text" style="width: 81%">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+
+            <ul class="list-group list-group-horizontal gap-1 mb-3">
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                html
+              </li>
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                css
+              </li>
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                javascript
+              </li>
             </ul>
-            <div class="button-container">
-              <a href="#" class="btn">See Project</a>
-            </div>
+
+            <a href="#" class="btn btn-primary">See Project</a>
           </div>
         </div>
-        <div class="card rev">
-          <div class="img-container">
-            <img src="images/cardImg4.png" alt="project image" />
-          </div>
-          <div class="content">
-            <div class="project_name">
-              <h3 id="title">Multi-Post Stories</h3>
-            </div>
-            <div class="project_info">
-              <div class="company">
-                <p>canopy</p>
-              </div>
-              <img class="dot" src="images/dot.png" alt="" />
-              <div class="role">
-                <p>Back End Dev</p>
-              </div>
-              <img class="dot" src="images/dot.png" alt="" />
-              <div class="year">
-                <p>2015</p>
-              </div>
-            </div>
-            <div class="description">
-              <p>
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
+        <div
+          class="card p-4 mx-auto d-flex flex-row justify-content-between align-items-center gap-5"
+          style="width: 100%"
+        >
+          <img
+            src="images/cardImg4.png"
+            class="card-img-top"
+            alt="project image"
+            style="width: 45%"
+          />
+
+          <div class="card-body">
+            <h3
+              class="card-title m-0 text-capitalize"
+              style="font-size: 40px; color: #091e42"
+            >
+              Multi-Post Stories
+            </h3>
+            <div class="d-flex align-items-center gap-2 mt-3">
+              <p
+                class="card-text m-0 text-uppercase"
+                style="font-size: 18px; color: #344563; font-weight: 500"
+              >
+                canopy
+              </p>
+              <img
+                class="img-fluid"
+                src="images/dot.png"
+                alt=""
+                style="width: 8px"
+              />
+              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
+                Back End Dev
+              </p>
+              <img
+                class="img-fluid"
+                src="images/dot.png"
+                alt=""
+                style="width: 8px"
+              />
+              <p class="card-text m-0" style="font-size: 18px; color: #6b778c">
+                2015
               </p>
             </div>
-            <ul class="languages">
-              <li id="lang">html</li>
-              <li id="lang">css</li>
-              <li id="lang">javascript</li>
+
+            <p class="card-text" style="width: 81%">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+
+            <ul class="list-group list-group-horizontal gap-1 mb-3">
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                html
+              </li>
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                css
+              </li>
+              <li
+                class="list-group-item px-2 py-1"
+                style="
+                  border: none;
+                  background: #ebebff;
+                  border-radius: 8px;
+                  color: #6070ff;
+                  font-weight: 500;
+                  font-size: 12px;
+                "
+              >
+                javascript
+              </li>
             </ul>
-            <div class="button-container">
-              <a href="#" class="btn">See Project</a>
-            </div>
+
+            <a href="#" class="btn btn-primary">See Project</a>
           </div>
         </div>
       </section>
